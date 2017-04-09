@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SEVUnLoginViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="PBb-Df-pgZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholdImage" translatesAutoresizingMaskIntoConstraints="NO" id="uPD-dx-bTd">
+                    <rect key="frame" x="137" y="50" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="6WH-Pn-JR2"/>
+                        <constraint firstAttribute="height" constant="100" id="Q4Y-zv-yjG"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVx-7v-5Iu">
+                    <rect key="frame" x="138" y="190" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.98146873710000004" green="0.49400651449999999" blue="0.22929358480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Un1-Sq-qBz"/>
+                        <constraint firstAttribute="height" constant="40" id="uMM-G1-0VJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="登录/注册">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="loginBtn:" destination="-1" eventType="touchUpInside" id="mkC-z6-UHJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PBb-Df-pgZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="13v-iL-oei"/>
+                <constraint firstItem="uPD-dx-bTd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2NY-YP-TzK"/>
+                <constraint firstItem="uPD-dx-bTd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="Fdv-N7-RHc"/>
+                <constraint firstAttribute="bottom" secondItem="PBb-Df-pgZ" secondAttribute="bottom" id="HKP-sL-uGW"/>
+                <constraint firstItem="sVx-7v-5Iu" firstAttribute="top" secondItem="uPD-dx-bTd" secondAttribute="bottom" constant="40" id="Xag-Uc-rOo"/>
+                <constraint firstItem="PBb-Df-pgZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ow2-J7-qmo"/>
+                <constraint firstAttribute="trailing" secondItem="PBb-Df-pgZ" secondAttribute="trailing" id="uxf-Gj-ODa"/>
+                <constraint firstItem="sVx-7v-5Iu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ybh-A7-CG3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="236.5" y="71"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_bg" width="512" height="344"/>
+        <image name="placeholdImage" width="31" height="31"/>
+    </resources>
+</document>

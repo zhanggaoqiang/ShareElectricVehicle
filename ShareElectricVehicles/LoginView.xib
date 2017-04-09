@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SEVDidLoginViewController">
+            <connections>
+                <outlet property="despositChargeImage" destination="S7V-Dx-Ibj" id="PBs-Eu-ye6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="377"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Y0g-Ex-Kco">
+                    <rect key="frame" x="0.0" y="0.0" width="430" height="252"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="认证过程" translatesAutoresizingMaskIntoConstraints="NO" id="S7V-Dx-Ibj">
+                    <rect key="frame" x="0.0" y="252" width="430" height="125"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholdImage" translatesAutoresizingMaskIntoConstraints="NO" id="7ME-6n-Z3V">
+                    <rect key="frame" x="165" y="50" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="HOe-Mw-QBY"/>
+                        <constraint firstAttribute="height" constant="100" id="bjL-GH-4CM"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15324715795" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PV-Qj-Chi">
+                    <rect key="frame" x="165" y="170" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="ENd-P9-2rF"/>
+                        <constraint firstAttribute="height" constant="21" id="yzK-Tu-LUq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGy-Ms-SAj">
+                    <rect key="frame" x="165" y="211" width="100" height="30"/>
+                    <color key="backgroundColor" red="0.1485719979" green="0.16028520460000001" blue="0.1893593073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="XuH-a6-Kyv"/>
+                        <constraint firstAttribute="height" constant="30" id="pIA-PB-dv1"/>
+                    </constraints>
+                    <state key="normal" title="信用积分">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Y0g-Ex-Kco" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="2/3" id="3tt-Mg-vwW"/>
+                <constraint firstItem="ZGy-Ms-SAj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4W8-mS-VsB"/>
+                <constraint firstItem="Y0g-Ex-Kco" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5Rm-53-GnO"/>
+                <constraint firstItem="7ME-6n-Z3V" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5X7-d6-6BX"/>
+                <constraint firstItem="S7V-Dx-Ibj" firstAttribute="top" secondItem="Y0g-Ex-Kco" secondAttribute="bottom" id="8kk-ZL-Biu"/>
+                <constraint firstItem="ZGy-Ms-SAj" firstAttribute="top" secondItem="8PV-Qj-Chi" secondAttribute="bottom" constant="20" id="APe-rQ-Py0"/>
+                <constraint firstItem="Y0g-Ex-Kco" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="K3q-vT-Oyj"/>
+                <constraint firstItem="7ME-6n-Z3V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="K8j-A4-yA3"/>
+                <constraint firstAttribute="bottom" secondItem="S7V-Dx-Ibj" secondAttribute="bottom" id="MLv-4t-pH3"/>
+                <constraint firstItem="8PV-Qj-Chi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hhU-0m-rnY"/>
+                <constraint firstItem="S7V-Dx-Ibj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jqk-GJ-aW3"/>
+                <constraint firstItem="Y0g-Ex-Kco" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mhw-3F-VpC"/>
+                <constraint firstAttribute="trailing" secondItem="S7V-Dx-Ibj" secondAttribute="trailing" id="yDF-rQ-9XN"/>
+                <constraint firstItem="8PV-Qj-Chi" firstAttribute="top" secondItem="7ME-6n-Z3V" secondAttribute="bottom" constant="20" id="ywV-1j-ACC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="171" y="317.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_bg" width="512" height="344"/>
+        <image name="placeholdImage" width="31" height="31"/>
+        <image name="认证过程" width="232" height="85"/>
+    </resources>
+</document>
